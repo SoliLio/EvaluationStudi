@@ -31,7 +31,7 @@ manager INT(5),
 FOREIGN KEY (manager) REFERENCES managers(id_manager)
 ) ENGINE=INNODB;
 
--- Creation s'une sur la colonne cinema de la table managers 
+-- Creation d'une cle externe sur la colonne cinema de la table managers 
 ALTER TABLE managers ADD CONSTRAINT cinema FOREIGN KEY (cinema) REFERENCES cinemas(id_cinema);
 
 /* Table halls
@@ -262,4 +262,5 @@ INSERT INTO seance_cinema_4 (date_seance, hall, movie) VALUES("2022-11-25 13:00:
 INSERT INTO seance_cinema_3 (date_seance, hall, movie) VALUES("2022-11-29 22:00:00", 2, 1);
 INSERT INTO seance_cinema_4 (date_seance, hall, movie) VALUES("2022-11-27 17:00:00", 4, 2);
 */
--- # mysqldump -u root --databases group_cine > C:\demo\mktest\reste.sql
+-- commande mysql dump pour sauvegarde base donnnees
+-- # mysqldump -u root --databases group_cine > C:\...
