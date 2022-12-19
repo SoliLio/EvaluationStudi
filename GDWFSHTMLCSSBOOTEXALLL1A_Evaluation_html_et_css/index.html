@@ -4,41 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Association esport caritative, tous ensemble amusons nous en aidant les autres "
+    />
+    <meta
+      name="keywords"
+      content="esport, caritative, tournoi, stream, association, gaming, gamer, solidaire"
+    />
+    <meta name="author" content="Massing Kevin" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Generation Gamer</title>
   </head>
   <body>
     <section id="welcome">
       <header>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="130"
-          zoomAndPan="magnify"
-          viewBox="0 0 97.5 112.499997"
-          height="150"
-          preserveAspectRatio="xMidYMid meet"
-          version="1.0"
-        >
-          <defs>
-            <clipPath id="69c2fb094a">
+        <div class="navbar">
+          <label for="menu-toggle" class="menu-btn">
+            <div class="menu-btn-line"></div>
+            <div class="menu-btn-line"></div>
+            <div class="menu-btn-line"></div>
+          </label>
+          <input type="checkbox" name="menu-toggle" id="menu-toggle" aria-label="afficher menu de navigation" checked>
+          <nav role="navigation" aria-label="navigation principale" id="navigation-principale">
+            <ul class="liste-menu-principal">
+              <li><p>L'association</p>
+                  <ul class="sous-menu">
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">L'equipe</a></li>
+                    <li><a href="#">En live</a></li>
+                    <li><a href="#">Quelques chiffres</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Evenement</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"            
+            zoomAndPan="magnify"
+            viewBox="0 0 97.5 112.499997"            
+            preserveAspectRatio="xMidYMid meet"
+            version="1.0"
+          >
+            <defs>
+              <clipPath id="69c2fb094a">
+                <path
+                  d="M 0 0.3125 L 97.003906 0.3125 L 97.003906 111.964844 L 0 111.964844 Z M 0 0.3125 "
+                  clip-rule="nonzero"
+                />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#69c2fb094a)">
               <path
-                d="M 0 0.3125 L 97.003906 0.3125 L 97.003906 111.964844 L 0 111.964844 Z M 0 0.3125 "
-                clip-rule="nonzero"
+                fill="#ffde59"
+                d="M 69.570312 20.121094 L 48.75 8.109375 L 7.089844 32.128906 L 7.089844 80.171875 L 48.75 104.191406 L 90.390625 80.171875 L 90.390625 32.128906 Z M 74.941406 59.710938 L 66.851562 59.710938 C 64.867188 59.710938 63.285156 58.128906 63.285156 56.152344 C 63.285156 54.214844 64.867188 52.59375 66.851562 52.59375 L 82.03125 52.59375 L 82.03125 73.300781 C 82.03125 74.722656 81.183594 75.96875 79.933594 76.546875 L 56.996094 89.734375 C 55.304688 90.691406 53.117188 90.113281 52.160156 88.46875 C 51.847656 87.890625 51.691406 87.3125 51.691406 86.6875 L 51.648438 86.6875 L 51.648438 25.613281 C 51.648438 23.632812 53.230469 22.054688 55.214844 22.054688 C 55.996094 22.054688 56.683594 22.320312 57.265625 22.722656 L 80.246094 35.957031 C 81.363281 36.621094 82.03125 37.800781 82.03125 39.003906 L 82.03125 45.519531 L 74.941406 45.519531 L 74.941406 41.046875 L 61.855469 33.488281 L 58.757812 31.707031 L 58.757812 80.574219 L 74.941406 71.277344 Z M 22.558594 59.710938 L 30.648438 59.710938 C 32.589844 59.710938 34.171875 58.128906 34.171875 56.152344 C 34.171875 54.214844 32.589844 52.59375 30.648438 52.59375 L 15.425781 52.59375 L 15.425781 73.300781 C 15.425781 74.722656 16.273438 75.96875 17.519531 76.546875 L 40.503906 89.734375 C 42.195312 90.691406 44.335938 90.113281 45.292969 88.46875 C 45.652344 87.890625 45.808594 87.3125 45.808594 86.6875 L 45.808594 25.613281 C 45.808594 23.632812 44.226562 22.054688 42.242188 22.054688 C 41.460938 22.054688 40.769531 22.320312 40.191406 22.722656 L 17.207031 35.957031 C 16.09375 36.621094 15.46875 37.800781 15.46875 39.003906 L 15.425781 39.003906 L 15.425781 45.519531 L 22.535156 45.519531 L 22.535156 41.046875 L 35.621094 33.488281 L 38.71875 31.707031 L 38.71875 80.574219 L 22.558594 71.277344 Z M 50.535156 1.058594 L 95.714844 27.035156 C 96.832031 27.703125 97.457031 28.882812 97.457031 30.128906 L 97.5 30.128906 L 97.5 82.195312 C 97.5 83.621094 96.652344 84.863281 95.40625 85.398438 L 50.488281 111.289062 C 49.375 111.957031 47.96875 111.910156 46.921875 111.289062 L 1.785156 85.265625 C 0.625 84.597656 0 83.417969 0 82.21875 L 0 30.128906 C 0 28.660156 0.847656 27.460938 2.050781 26.878906 L 46.964844 1.011719 C 48.125 0.367188 49.484375 0.414062 50.535156 1.058594 Z M 50.535156 1.058594 "
+                fill-opacity="1"
+                fill-rule="nonzero"
               />
-            </clipPath>
-          </defs>
-          <g clip-path="url(#69c2fb094a)">
-            <path
-              fill="#ffde59"
-              d="M 69.570312 20.121094 L 48.75 8.109375 L 7.089844 32.128906 L 7.089844 80.171875 L 48.75 104.191406 L 90.390625 80.171875 L 90.390625 32.128906 Z M 74.941406 59.710938 L 66.851562 59.710938 C 64.867188 59.710938 63.285156 58.128906 63.285156 56.152344 C 63.285156 54.214844 64.867188 52.59375 66.851562 52.59375 L 82.03125 52.59375 L 82.03125 73.300781 C 82.03125 74.722656 81.183594 75.96875 79.933594 76.546875 L 56.996094 89.734375 C 55.304688 90.691406 53.117188 90.113281 52.160156 88.46875 C 51.847656 87.890625 51.691406 87.3125 51.691406 86.6875 L 51.648438 86.6875 L 51.648438 25.613281 C 51.648438 23.632812 53.230469 22.054688 55.214844 22.054688 C 55.996094 22.054688 56.683594 22.320312 57.265625 22.722656 L 80.246094 35.957031 C 81.363281 36.621094 82.03125 37.800781 82.03125 39.003906 L 82.03125 45.519531 L 74.941406 45.519531 L 74.941406 41.046875 L 61.855469 33.488281 L 58.757812 31.707031 L 58.757812 80.574219 L 74.941406 71.277344 Z M 22.558594 59.710938 L 30.648438 59.710938 C 32.589844 59.710938 34.171875 58.128906 34.171875 56.152344 C 34.171875 54.214844 32.589844 52.59375 30.648438 52.59375 L 15.425781 52.59375 L 15.425781 73.300781 C 15.425781 74.722656 16.273438 75.96875 17.519531 76.546875 L 40.503906 89.734375 C 42.195312 90.691406 44.335938 90.113281 45.292969 88.46875 C 45.652344 87.890625 45.808594 87.3125 45.808594 86.6875 L 45.808594 25.613281 C 45.808594 23.632812 44.226562 22.054688 42.242188 22.054688 C 41.460938 22.054688 40.769531 22.320312 40.191406 22.722656 L 17.207031 35.957031 C 16.09375 36.621094 15.46875 37.800781 15.46875 39.003906 L 15.425781 39.003906 L 15.425781 45.519531 L 22.535156 45.519531 L 22.535156 41.046875 L 35.621094 33.488281 L 38.71875 31.707031 L 38.71875 80.574219 L 22.558594 71.277344 Z M 50.535156 1.058594 L 95.714844 27.035156 C 96.832031 27.703125 97.457031 28.882812 97.457031 30.128906 L 97.5 30.128906 L 97.5 82.195312 C 97.5 83.621094 96.652344 84.863281 95.40625 85.398438 L 50.488281 111.289062 C 49.375 111.957031 47.96875 111.910156 46.921875 111.289062 L 1.785156 85.265625 C 0.625 84.597656 0 83.417969 0 82.21875 L 0 30.128906 C 0 28.660156 0.847656 27.460938 2.050781 26.878906 L 46.964844 1.011719 C 48.125 0.367188 49.484375 0.414062 50.535156 1.058594 Z M 50.535156 1.058594 "
-              fill-opacity="1"
-              fill-rule="nonzero"
-            />
-          </g>
-        </svg>
-        <h1>Generation Gamer</h1>
-        <span>Ensemble, jouons a changer le monde</span>
+            </g>
+          </svg>
+        </div>
+        <div id="welcome-text">
+          <h1>Generation Gamer</h1>
+          <p>Ensemble, jouons a changer le monde</p>
+        </div>
+                        
       </header>
     </section>
     <main>
@@ -54,7 +88,7 @@
               <div class="line line-two"><!--ligne cree en css--></div>
             </div>
             <p>
-              La génération gamer est une association caritative e-sport qui a
+              La génération gamer <a href="#">test</a> est une association caritative e-sport qui a
               été fondée en 2020 par un groupe de passionnés de jeux vidéo.
               Inspirés par le succès des compétitions e-sport et de la
               communauté gaming en ligne, ils ont voulu créer une association
@@ -104,6 +138,7 @@
         </h1>
         <div id="first-event">
           <img src="#" alt="premier tournoi" />
+          <!--! trouver illustration-->
           <p>
             Lancement de l'association en Avril 2020, avec la tenue d'un tournoi
             en ligne pour récolter des fonds pour une organisation caritative.
@@ -112,10 +147,12 @@
         <div id="resume-event">
           <div class="history-event">
             <img src="#" alt="photo a trouve" />
+            <!--! trouver illustration-->
             <p>Premiere participation a un tournoi officiel</p>
           </div>
           <div class="history-event">
             <img src="#" alt="photo a trouve" />
+            <!--! trouver illustration-->
             <p>
               L'organisation d'un événement en direct en 2021 pour collecter des
               dons pour une association de lutte contre la pauvreté.
@@ -123,10 +160,8 @@
           </div>
         </div>
       </section>
-      <section id="live">        
-        <h1>
-          NOS JEUX <span>DU MOMENT</span>
-        </h1>
+      <section id="live">
+        <h1>LES JEUX <span>DU MOMENT</span></h1>
         <div class="grid">
           <div class="box">
             <img
@@ -135,8 +170,8 @@
             />
             <div class="description">
               <div class="game-label">
-                <p class="racing">COURSES</p>
-                <p class="cars">VOITURES</p>
+                <p>COURSES</p>
+                <p>VOITURES</p>
               </div>
               <h2>ROCKET LEAGUE</h2>
             </div>
@@ -148,8 +183,8 @@
             />
             <div class="description">
               <div class="game-label">
-                <p class="war">TIR</p>
-                <p class="strategy">STRATEGIE</p>
+                <p>TIR</p>
+                <p>STRATEGIE</p>
               </div>
             </div>
             <h2>WARZONE</h2>
@@ -186,20 +221,50 @@
             <p>TROPHEES</p>
           </div>
         </div>
+        <div id="add-next-event">
+          <!--! ajouter pub  evenement -->
+        </div>
       </section>
     </main>
     <footer>
-      <h1>MERCI !</h1>
-      <p>Vous aussi, soutenez une bonne cause en jouant à vos jeux préférés</p>
-      <div class="contact">
-        <h2>CONTACT</h2>
+      <div class="footer-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="130"
+          zoomAndPan="magnify"
+          viewBox="0 0 97.5 112.499997"
+          height="150"
+          preserveAspectRatio="xMidYMid meet"
+          version="1.0"
+        >
+          <defs>
+            <clipPath id="69c2fb094a">
+              <path
+                d="M 0 0.3125 L 97.003906 0.3125 L 97.003906 111.964844 L 0 111.964844 Z M 0 0.3125 "
+                clip-rule="nonzero"
+              />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#69c2fb094a)">
+            <path
+              fill="#ffde59"
+              d="M 69.570312 20.121094 L 48.75 8.109375 L 7.089844 32.128906 L 7.089844 80.171875 L 48.75 104.191406 L 90.390625 80.171875 L 90.390625 32.128906 Z M 74.941406 59.710938 L 66.851562 59.710938 C 64.867188 59.710938 63.285156 58.128906 63.285156 56.152344 C 63.285156 54.214844 64.867188 52.59375 66.851562 52.59375 L 82.03125 52.59375 L 82.03125 73.300781 C 82.03125 74.722656 81.183594 75.96875 79.933594 76.546875 L 56.996094 89.734375 C 55.304688 90.691406 53.117188 90.113281 52.160156 88.46875 C 51.847656 87.890625 51.691406 87.3125 51.691406 86.6875 L 51.648438 86.6875 L 51.648438 25.613281 C 51.648438 23.632812 53.230469 22.054688 55.214844 22.054688 C 55.996094 22.054688 56.683594 22.320312 57.265625 22.722656 L 80.246094 35.957031 C 81.363281 36.621094 82.03125 37.800781 82.03125 39.003906 L 82.03125 45.519531 L 74.941406 45.519531 L 74.941406 41.046875 L 61.855469 33.488281 L 58.757812 31.707031 L 58.757812 80.574219 L 74.941406 71.277344 Z M 22.558594 59.710938 L 30.648438 59.710938 C 32.589844 59.710938 34.171875 58.128906 34.171875 56.152344 C 34.171875 54.214844 32.589844 52.59375 30.648438 52.59375 L 15.425781 52.59375 L 15.425781 73.300781 C 15.425781 74.722656 16.273438 75.96875 17.519531 76.546875 L 40.503906 89.734375 C 42.195312 90.691406 44.335938 90.113281 45.292969 88.46875 C 45.652344 87.890625 45.808594 87.3125 45.808594 86.6875 L 45.808594 25.613281 C 45.808594 23.632812 44.226562 22.054688 42.242188 22.054688 C 41.460938 22.054688 40.769531 22.320312 40.191406 22.722656 L 17.207031 35.957031 C 16.09375 36.621094 15.46875 37.800781 15.46875 39.003906 L 15.425781 39.003906 L 15.425781 45.519531 L 22.535156 45.519531 L 22.535156 41.046875 L 35.621094 33.488281 L 38.71875 31.707031 L 38.71875 80.574219 L 22.558594 71.277344 Z M 50.535156 1.058594 L 95.714844 27.035156 C 96.832031 27.703125 97.457031 28.882812 97.457031 30.128906 L 97.5 30.128906 L 97.5 82.195312 C 97.5 83.621094 96.652344 84.863281 95.40625 85.398438 L 50.488281 111.289062 C 49.375 111.957031 47.96875 111.910156 46.921875 111.289062 L 1.785156 85.265625 C 0.625 84.597656 0 83.417969 0 82.21875 L 0 30.128906 C 0 28.660156 0.847656 27.460938 2.050781 26.878906 L 46.964844 1.011719 C 48.125 0.367188 49.484375 0.414062 50.535156 1.058594 Z M 50.535156 1.058594 "
+              fill-opacity="1"
+              fill-rule="nonzero"
+            />
+          </g>
+        </svg>
       </div>
+      <h2>MERCI !</h2>
+      <p>Vous aussi, soutenez une bonne cause en jouant à vos jeux préférés</p>
+
       <div class="social_network">
         <h2>Retrouvez nous sur</h2>
         <ul id="social-network-list">
           <li>
             <a href="https://www.twitch.tv/" target="_blank"
-              ><img src="/assets/images/twitch.pngyou" alt="lien chaine twitch"
+              ><img src="/assets/images/twitch.png" alt="lien chaine twitch"
             /></a>
           </li>
           <li>

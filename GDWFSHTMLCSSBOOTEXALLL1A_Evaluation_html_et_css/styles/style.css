@@ -1,0 +1,60 @@
+/* Import polices, creation variables*/
+
+@font-face {
+  font-family: "Rexlia";
+  src: url("/assets/fonts/rexlia\ rg.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RedHatDisplay";
+  src: url("/assets/fonts/RedHatDisplay-VariableFont_wght.ttf")
+    format("truetype");
+}
+:root {
+  /*couleur principale */
+  --theme-color: #ffde59;
+}
+/*CSS global*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+html,
+body,
+section {
+  block-size: 100%;
+  letter-spacing: 1.2px;
+}
+/*Gestion du comportement au scroll*/
+html {
+  scroll-snap-type: y mandatory;
+  
+}
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+ 
+}
+section,
+footer
+ {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+body {
+  background: #000;
+  color: #ffffff;
+  font-family:"RedHatDisplay", sans-serif;
+}
+
+/*CSS Par ordre d'apparition */
