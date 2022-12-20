@@ -19,34 +19,45 @@
   </head>
   <body>
     <section id="welcome">
+      <div class="navbar">                
+        <input
+          type="checkbox"
+          name="menu-toggle"
+          id="menu-toggle"
+          aria-label="afficher menu de navigation"
+          checked
+        />
+        <label for="menu-toggle" class="menu-btn">
+          <div class="menu-btn-line"></div>
+          <div class="menu-btn-line"></div>
+          <div class="menu-btn-line"></div>
+        </label>        
+        <nav
+          role="navigation"
+          aria-label="navigation principale"
+          id="navigation-principale"
+        >
+          <ul class="liste-menu-principal">
+            <li>
+              <p  class="current-page">L'Association</p>
+              <ul class="sous-menu">
+                <li><a href="/#about">A propos</a></li>
+                <li><a href="/#team">L'equipe</a></li>
+                <li><a href="/#live">En live</a></li>
+                <li><a href="/#statistics">Quelques chiffres</a></li>
+              </ul>
+            </li>
+            <li><a href="/events.html">Les Evenements</a></li>
+          </ul>
+        </nav>
+      </div>
       <header>
-        <div class="navbar">
-          <label for="menu-toggle" class="menu-btn">
-            <div class="menu-btn-line"></div>
-            <div class="menu-btn-line"></div>
-            <div class="menu-btn-line"></div>
-          </label>
-          <input type="checkbox" name="menu-toggle" id="menu-toggle" aria-label="afficher menu de navigation" checked>
-          <nav role="navigation" aria-label="navigation principale" id="navigation-principale">
-            <ul class="liste-menu-principal">
-              <li><p>L'association</p>
-                  <ul class="sous-menu">
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">L'equipe</a></li>
-                    <li><a href="#">En live</a></li>
-                    <li><a href="#">Quelques chiffres</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Evenement</a></li>
-            </ul>
-          </nav>
-        </div>
         <div class="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"            
+            xmlns:xlink="http://www.w3.org/1999/xlink"
             zoomAndPan="magnify"
-            viewBox="0 0 97.5 112.499997"            
+            viewBox="0 0 97.5 112.499997"
             preserveAspectRatio="xMidYMid meet"
             version="1.0"
           >
@@ -72,8 +83,8 @@
           <h1>Generation Gamer</h1>
           <p>Ensemble, jouons a changer le monde</p>
         </div>
-                        
       </header>
+      
     </section>
     <main>
       <section id="about">
@@ -88,19 +99,20 @@
               <div class="line line-two"><!--ligne cree en css--></div>
             </div>
             <p>
-              La génération gamer <a href="#">test</a> est une association caritative e-sport qui a
-              été fondée en 2020 par un groupe de passionnés de jeux vidéo.
-              Inspirés par le succès des compétitions e-sport et de la
-              communauté gaming en ligne, ils ont voulu créer une association
-              pour rassembler les joueurs et utiliser leur passion commune pour
-              soutenir des causes caritatives. Depuis sa création, la génération
-              gamer a organisé plusieurs événements en ligne et en direct pour
-              récolter des fonds pour des organisations caritatives, tout en
-              offrant des opportunités pour les joueurs de se faire connaître et
-              de participer à des compétitions professionnelles. La génération
-              gamer est reconnue pour son engagement envers les causes sociales
-              et environnementales, et continue de sensibiliser les gens aux
-              enjeux actuels à travers ses événements e-sport.
+              La génération gamer <a href="#">test</a> est une association
+              caritative e-sport qui a été fondée en 2020 par un groupe de
+              passionnés de jeux vidéo. Inspirés par le succès des compétitions
+              e-sport et de la communauté gaming en ligne, ils ont voulu créer
+              une association pour rassembler les joueurs et utiliser leur
+              passion commune pour soutenir des causes caritatives. Depuis sa
+              création, la génération gamer a organisé plusieurs événements en
+              ligne et en direct pour récolter des fonds pour des organisations
+              caritatives, tout en offrant des opportunités pour les joueurs de
+              se faire connaître et de participer à des compétitions
+              professionnelles. La génération gamer est reconnue pour son
+              engagement envers les causes sociales et environnementales, et
+              continue de sensibiliser les gens aux enjeux actuels à travers ses
+              événements e-sport.
             </p>
           </div>
         </div>
@@ -160,7 +172,7 @@
           </div>
         </div>
       </section>
-      <section id="live">
+      <section  id="live">
         <h1>LES JEUX <span>DU MOMENT</span></h1>
         <div class="grid">
           <div class="box">

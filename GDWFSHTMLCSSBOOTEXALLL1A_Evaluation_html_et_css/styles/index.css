@@ -49,14 +49,14 @@ section#welcome h1 {
 }
 
 img {
-    max-width: 100vw;
+    width: 100%; /*! Parametre temporaire*/
 }
 
 /* Gestion menu deroulant vue mobile */
 
 
 #menu-toggle{    
-    position: absolute;
+    position: fixed;
     left: -999px;
 }
 
@@ -67,14 +67,14 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
+    align-items: center;    
     top: 1rem;
     right: 1rem;
+    position: fixed;
     z-index: 1;
     background: rgba(34, 33, 33, 0.950);
-    border-radius: 50%;
-    
+    border-radius: 50%;    
+    transition: all ease-in-out 0.3s;  
 }
 
 .menu-btn-line{
@@ -85,21 +85,48 @@ img {
 }
 
 #navigation-principale {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    height: calc(100% - 2rem);
+    position: fixed;    
+    left: -100%;
+    height: 100%;
     width: calc(100% - 2rem);    
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: rgba(34, 33, 33, 0.980);
     border-radius: 10px;
-    padding: 1rem;
-    
+    padding: 1rem;  
+    transition: all ease-in-out 0.3s;     
+}
+.current-page{    
+    font-weight: 900;
+    color: var(--theme-color);    
+}
+.liste-menu-principal {    
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.liste-menu-principal li {
+    margin: 0.5rem 1rem;
+}
+.sous-menu li {
+    font-size: 1rem;
 }
 
-#menu-toggle:checked + #navigation-principale {
-   display: none; 
-   
+.sous-menu li::before{
+    content: "\2937";
+    margin-right: 5px;
+}
+
+#menu-toggle:checked ~ #navigation-principale {
+   left: 0;    
+}
+#menu-toggle:checked + label{
+    right: 2rem;
+}
+
+/*Section about*/
+
+section#about{
+    text-align: center;
+    padding: 10px;
 }
